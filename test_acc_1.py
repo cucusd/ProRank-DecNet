@@ -409,26 +409,26 @@ def main(output_dir):
             ])
 
             # eval_dataset = TextFileDataset_sub_lung(
-            #     txt_file='/data1/jinyang/bibm/transformers/datasets/guizhou_shanxi/test.txt',
-            #     img_dir='/data1/jinyang/bibm/transformers/datasets/guizhou_shanxi/guizhou_shanxi_all',
-            #     sub_lung_dir='/data1/jinyang/bibm/transformers/datasets/guizhou_shanxi/guizhou_shanxi_all_six',
-            #     label_file='/data1/jinyang/bibm/transformers/datasets/guizhou_shanxi/all_label.txt',
+            #     txt_file='./transformers/datasets/guizhou_shanxi/test.txt',
+            #     img_dir='./transformers/datasets/guizhou_shanxi/guizhou_shanxi_all',
+            #     sub_lung_dir='./transformers/datasets/guizhou_shanxi/guizhou_shanxi_all_six',
+            #     label_file='./transformers/datasets/guizhou_shanxi/all_label.txt',
             #     transform=transform, classification_type=3
             # )
 
             # eval_dataset = TextFileDataset_sub_lung(
-            #     txt_file='/data1/jinyang/bibm/transformers/datasets/dataset_splits_year_8ka/test.txt',
-            #     img_dir='/data1/jinyang/bibm/transformers/datasets/guizhou_sick_health_2',
-            #     sub_lung_dir='/data1/jinyang/bibm/transformers/datasets/guizhou_sub_lung_2_error',
-            #     label_file='/data1/jinyang/bibm/transformers/datasets/dataset_splits_year_8ka/sick_health885_1022_label.txt',
+            #     txt_file='./transformers/datasets/dataset_splits_year_8ka/test.txt',
+            #     img_dir='./transformers/datasets/guizhou_sick_health_2',
+            #     sub_lung_dir='./transformers/datasets/guizhou_sub_lung_2_error',
+            #     label_file='./transformers/datasets/dataset_splits_year_8ka/sick_health885_1022_label.txt',
             #     transform=transform, classification_type=3
             # )
             #
             eval_dataset = TextFileDataset_sub_lung(
-                txt_file='/data1/jinyang/bibm/transformers/datasets/shanxi_dataset_new/shanxi_4746/fold1_test.txt',
-                img_dir='/data1/jinyang/bibm/transformers/datasets/shanxi_dataset_new/seg_rec_img_1024',
-                sub_lung_dir='/data1/jinyang/bibm/transformers/datasets/shanxi_dataset_new/seg_rec_img_1024_six',
-                label_file='/data1/jinyang/bibm/transformers/datasets/shanxi_dataset_new/labels_t.txt',
+                txt_file='./transformers/datasets/shanxi_dataset_new/shanxi_4746/fold1_test.txt',
+                img_dir='./transformers/datasets/shanxi_dataset_new/seg_rec_img_1024',
+                sub_lung_dir='./transformers/datasets/shanxi_dataset_new/seg_rec_img_1024_six',
+                label_file='./transformers/datasets/shanxi_dataset_new/labels_t.txt',
                 transform=transform, classification_type=3
             )
 
@@ -455,10 +455,10 @@ def main(output_dir):
         json.dump(log_messages, f, indent=4, ensure_ascii=False)
 
 if __name__ == "__main__":
-    path = '/data1/jinyang/bibm/transformers/engine/output/shanxi_train_baseline_old_data_baseline_Stage1x3_mix/test_on_guizhou_shanxi/'
+    path = './transformers/engine/output/shanxi_train_baseline_old_data_baseline_Stage1x3_mix/test_on_guizhou_shanxi/'
     path_list = os.listdir(path)
     for index, sub_path in enumerate(path_list):
-        output_dir = '/data1/jinyang/bibm/transformers/engine/output/shanxi_train_baseline_old_data_baseline_Stage1x3_mix/test_on_guizhou_shanxi/'+sub_path
+        output_dir = './transformers/engine/output/shanxi_train_baseline_old_data_baseline_Stage1x3_mix/test_on_guizhou_shanxi/'+sub_path
         main(output_dir)
 
     # output_dir = '/engine/output/shanxi_train_old_data_Stage1x3_BRCD_convnext/ori/convnextv2-tiny_aug1e-05'
