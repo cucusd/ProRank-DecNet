@@ -35,11 +35,9 @@ If you have any question, feel free to contact the authors.
 
 Le Yang(杨乐):  nwpuyangle@gmail.com
 
-Yang Jin(靳杨): jin91999@gmail.com
+Binglu Wang(王秉路): wbl921129@gmail.com
 
-Meiyue Song(宋美月): 
 
-Jingyi Cui(崔靖沂): cuijingyic149@gmail.com
 
 
 ## Data Access
