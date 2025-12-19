@@ -11,7 +11,7 @@ class="center">
 
 ## Usage
 Please refer to [GET_STARTED.md](GET_STARTED.md) for training and evaluation instructions. 
-Our pretrained model can be downloaded from [this link](https://huggingface.co/models).
+Our pretrained model can be downloaded from [this link](https://drive.google.com/drive/folders/1054wCA8jcTXEoCLGQjxaLx7vCNHGVZBe?usp=sharing).
 
 ## Visualizations
 Comparative visualization of Class Activation Mapping (CAM) heatmaps demonstrating lesion localization capabilities. The proposed method (Ours) exhibits precise focus on intrapulmonary sub-regions consistent with pneumoconiosis aerodynamic deposition patterns, whereas the baseline frequently misattends to extrapulmonary artifacts.
