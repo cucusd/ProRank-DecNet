@@ -547,9 +547,9 @@ def main(config):
 
     train_dataset = TextFileDataset_sub_lung(
         txt_file=args.train_dir,
-        img_dir='/data1/jinyang/bibm/transformers/datasets/guizhou_shanxi/guizhou_shanxi_all',
-        sub_lung_dir='/data1/jinyang/bibm/transformers/datasets/guizhou_shanxi/guizhou_shanxi_all_six',
-        label_file='/data1/jinyang/bibm/transformers/datasets/guizhou_shanxi/all_label.txt',
+        img_dir='./transformers/datasets/guizhou_shanxi/guizhou_shanxi_all',
+        sub_lung_dir='./transformers/datasets/guizhou_shanxi/guizhou_shanxi_all_six',
+        label_file='./transformers/datasets/guizhou_shanxi/all_label.txt',
         transform=transform, classification_type=args.num_labels_sub
     )
     train_dataloader = DataLoader(train_dataset, batch_size=args.per_device_train_batch_size, shuffle=True,
@@ -557,9 +557,9 @@ def main(config):
 
     eval_dataset = TextFileDataset_sub_lung(
         txt_file=args.validation_dir,
-        img_dir='/data1/jinyang/bibm/transformers/datasets/guizhou_shanxi/guizhou_shanxi_all',
-        sub_lung_dir='/data1/jinyang/bibm/transformers/datasets/guizhou_shanxi/guizhou_shanxi_all_six',
-        label_file='/data1/jinyang/bibm/transformers/datasets/guizhou_shanxi/all_label.txt',
+        img_dir='./transformers/datasets/guizhou_shanxi/guizhou_shanxi_all',
+        sub_lung_dir='./transformers/datasets/guizhou_shanxi/guizhou_shanxi_all_six',
+        label_file='./transformers/datasets/guizhou_shanxi/all_label.txt',
         transform=transform, classification_type=args.num_labels_sub
     )
     eval_dataloader = DataLoader(eval_dataset, batch_size=args.per_device_train_batch_size, collate_fn=collate_fn)
@@ -982,8 +982,8 @@ if __name__ == '__main__':
             args.unless_labels = [4]
             args.num_labels = num_labels
             args.num_labels_sub = num_labels_sub
-            args.train_dir = '/data1/jinyang/bibm/transformers/datasets/guizhou_shanxi/train_shanxiStage1x3.txt'
-            args.validation_dir = '/data1/jinyang/bibm/transformers/datasets/guizhou_shanxi/val.txt'
+            args.train_dir = './transformers/datasets/guizhou_shanxi/train_shanxiStage1x3.txt'
+            args.validation_dir = './transformers/datasets/guizhou_shanxi/val.txt'
             args.model_name = model_name[jj]
             args.per_device_train_batch_size = batch_sizes
             args.learning_rate = lrs[0]
